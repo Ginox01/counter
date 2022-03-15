@@ -73,7 +73,24 @@ buttonPlus.addEventListener('click',()=>{
 })
 
 
+//It creates the dark theme functions
 
+let btnDark = document.getElementById('dark')
+let counter = document.querySelector('.counter')
+
+btnDark.addEventListener('click',()=>{
+    if(document.body.classList.contains('body-dark')){
+        document.body.classList.remove('body-dark')
+    }
+    else{
+        document.body.classList.add('body-dark')
+        counter.style.backgroundColor = '#c4c48b'
+        btnReset.style.backgroundColor = 'pink'
+        buttonMinus.style.backgroundColor = 'pink'
+        buttonPlus.style.backgroundColor = 'pink'
+
+    }
+})
         
 
 

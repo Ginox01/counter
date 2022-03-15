@@ -8,6 +8,28 @@ body{
     font-family: 'Turret Road', cursive;
 }
 
+.body-dark {
+    background-color: black;
+}
+
+.btn-drk {
+    padding: 10px 15px 10px 15px;
+    border-radius: 30%;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.btn-drk:hover {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-drk:active {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
 .target {
     padding: 10px;
     border: 1px solid red;

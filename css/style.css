@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-.container{
+body{
+    font-family: 'Turret Road', cursive;
+}
+
+.target {
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.contenitore{
     height: 900px;
     display: flex;
     justify-content: center;
@@ -12,7 +21,7 @@
 }
 
 .counter {
-    background-color: gray;
+    background-color: #95979c;
     width: 85%;
     justify-content: center;
     align-items: center;
@@ -28,20 +37,91 @@
     border-radius: 20%;
     text-align: center;
     border: 1px solid black;
+    width: 200px;
 }
 
 
+.container-btn {
+    margin-top: 100px;
+}
+
+.btn-reset{
+    padding: 20% 30% 20% 30%;
+    border-radius: 50%;   
+    background-color: #e1e364;
+    text-align: center;
+    
+ 
+}
+
+.btn-reset:hover {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-reset:active {
+    background-color: #ab2424;
+}
+
+.display-value {
+    background-color: white;
+    border-radius: 20%;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+
+
+/* -----MEDIA QUERIES-----*/
+
+
 @media screen and (max-width:600px) {
-    .counter {
-        border-radius: 20%
+    
+    
+    .btn-reset {
+        padding: 15% 25% 15% 25%;
     }
     
 }
 
 @media screen and (max-width:400px) {
-    .counter {
-        width: 90%;
-        height: 90%;
+   
+    
+    .total {
+        width: 100px;
     }
+
+    
+
+    .btn-reset{
+        padding: 10% 15% 10% 15%;
+    
+    }
+
+    
     
 }
+
+@media screen and (max-width:300px){
+    
+    .plus {
+        display: block;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .minus {
+        display: block;
+        width: 80%;
+    }
+
+    .btn-reset {
+        padding: 10% 10% 10% 10%;
+    }
+
+    .display-value{
+        width: 15%;
+        font-size: 10px;
+    }
+}
+

@@ -39,4 +39,41 @@ setInterval(hideResetFunction,3000)
 //create and appending the plus button
 let buttonPlus = document.createElement('button')
 let divPlus = document.querySelector('.plus')
+buttonPlus.innerHTML = '+'
+buttonPlus.classList.add('btn-change')
 divPlus.appendChild(buttonPlus)
+
+//create and appending the minus button 
+let buttonMinus = document.createElement('button')
+let divMinus = document.querySelector('.minus')
+buttonMinus.innerHTML = '-'
+buttonMinus.classList.add('btn-change')
+divMinus.appendChild(buttonMinus)
+
+
+
+//it creates the event to add and subtract
+
+let userInput = document.getElementById('set')
+let getTheValueOfUserInput = Number(userInput.value)
+
+buttonMinus.addEventListener('click',()=>{
+    let userInput = document.getElementById('set')
+    let getTheValueOfUserInput = Number(userInput.value)
+    let display = getTheValueOfUserInput
+    divTotal.innerHTML -= display
+    
+})
+
+buttonPlus.addEventListener('click',()=>{
+    let value = Number(divTotal.textContent)
+    getTheValueOfUserInput = Number(userInput.value)
+    display = value + getTheValueOfUserInput
+    divTotal.innerHTML = display
+})
+
+
+
+        
+
+

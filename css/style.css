@@ -9,7 +9,7 @@ body{
 }
 
 .body-dark {
-    background-color: black;
+    background-color: #b0b0c8;
 }
 
 .btn-drk {
@@ -30,10 +30,6 @@ body{
     border: 2px solid white;
 }
 
-.target {
-    padding: 10px;
-    border: 1px solid red;
-}
 
 .contenitore{
     height: 900px;
@@ -52,9 +48,31 @@ body{
     border: 1px solid black;
 }
 
+.counter-dark {
+    background-color: #c4c48b;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    border-radius: 35%;
+    border: 1px solid black;
+}
+
 .total {
     margin-top: 50px;
     background-color: white;
+    font-size: 2em;
+    border-radius: 20%;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+
+}
+
+.total-dark {
+    margin-top: 50px;
+    background-color: #b0b0c8;
+    color: purple;
     font-size: 2em;
     border-radius: 20%;
     text-align: center;
@@ -76,7 +94,19 @@ body{
  
 }
 
+.btn-reset-dark {
+    padding: 20% 30% 20% 30%;
+    border-radius: 50%;   
+    background-color: rgb(188, 133, 142);
+    text-align: center;
+}
+
 .btn-reset:hover {
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-reset-dark:hover {
     border: 2px solid black;
     font-weight: bold;
 }
@@ -84,6 +114,10 @@ body{
 .btn-reset:active {
     background-color: #ab2424;
 }
+
+.btn-reset-dark:active{
+    background-color: wheat;
+} 
 
 .display-value {
     background-color: white;
@@ -93,7 +127,14 @@ body{
     width: 15%;
 }
 
-
+.display-value-dark {
+    background-color: #b0b0c8;
+    border-radius: 20%;
+    border: 1px solid black;
+    font-size: 24px;
+    width: 15%;
+    color: purple;
+}
 
 .plus {
     display: flex;
@@ -113,7 +154,19 @@ body{
     font-size: 3em;
 }
 
+.btn-change-dark {
+    padding: 10% 15% 10% 15%;
+    background-color: rgb(148, 89, 164);
+    border-radius: 20%;
+    border: 1px solid black;
+    font-size: 3em;
+}
+
 .btn-change:hover {
+    border: 2px solid black;
+}
+
+.btn-change-dark:hover {
     border: 2px solid black;
 }
 

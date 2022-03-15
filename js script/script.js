@@ -21,9 +21,16 @@ btnReset.addEventListener('click',()=>{
 function resetFunction(){
     resetMex = document.getElementById('reset-mex')
     resetMex.innerHTML = 'Valore resettato!'
-    resetMex.style.color = 'red'
     resetMex.style.fontSize = '1.5em'
     resetMex.style.position = 'absolute'
+    if(document.body.classList.contains('body-dark')){
+        resetMex.style.color = 'purple'
+    }
+    else {
+        resetMex.style.color = 'red'
+    }
+    
+    
     
 }
 
@@ -81,13 +88,21 @@ let counter = document.querySelector('.counter')
 btnDark.addEventListener('click',()=>{
     if(document.body.classList.contains('body-dark')){
         document.body.classList.remove('body-dark')
+        counter.classList.remove('counter-dark')
+        btnReset.classList.remove('btn-reset-dark')
+        buttonMinus.classList.remove('btn-change-dark')
+        buttonPlus.classList.remove('btn-change-dark')
+        userInput.classList.remove('display-value-dark')
+        divTotal.classList.remove('total-dark')
     }
     else{
         document.body.classList.add('body-dark')
-        counter.style.backgroundColor = '#c4c48b'
-        btnReset.style.backgroundColor = 'pink'
-        buttonMinus.style.backgroundColor = 'pink'
-        buttonPlus.style.backgroundColor = 'pink'
+        counter.classList.add('counter-dark')
+        btnReset.classList.add('btn-reset-dark')
+        buttonMinus.classList.add('btn-change-dark')
+        buttonPlus.classList.add('btn-change-dark')
+        userInput.classList.add('display-value-dark')
+        divTotal.classList.add('total-dark')
 
     }
 })

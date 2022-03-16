@@ -68,7 +68,14 @@ buttonMinus.addEventListener('click',()=>{
     let userInput = document.getElementById('set')
     let getTheValueOfUserInput = Number(userInput.value)
     let display = getTheValueOfUserInput
-    divTotal.innerHTML -= display
+    
+    if(divTotal.textContent.length > 9){
+        divTotal.innerHTML = 'Too much! &#128513'
+    }
+    else{
+        divTotal.innerHTML -= display
+    }
+    console.log(divTotal.textContent.length)
     
 })
 
@@ -76,7 +83,13 @@ buttonPlus.addEventListener('click',()=>{
     let value = Number(divTotal.textContent)
     getTheValueOfUserInput = Number(userInput.value)
     display = value + getTheValueOfUserInput
-    divTotal.innerHTML = display
+    if(divTotal.textContent.length > 9){
+        divTotal.innerHTML = 'Too much! &#128513'
+    }
+    else {
+        divTotal.innerHTML = display
+    }
+    
 })
 
 
